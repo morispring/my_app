@@ -17,9 +17,8 @@ module MyApp
         view_specs: false,      # 以下、必要に応じて任意にトグルする
         helper_specs: false,
         routing_specs: false,
-        controller_specs: false,
+        controller_specs: true,
         request_specs: true
-          
       # fixtureの代わりにfactory_girlを使うよう設定
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
     end
