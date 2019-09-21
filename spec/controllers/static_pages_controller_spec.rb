@@ -6,7 +6,7 @@ RSpec.describe StaticPagesController, type: :controller do
   it "get home" do
     expect(response).to have_http_status(:ok)
   end
-  
+
   before { get :help, params: {}, session: {} }
   it "get help" do
     expect(response).to have_http_status(:ok)
