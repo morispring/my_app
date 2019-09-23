@@ -19,7 +19,6 @@ module MyApp
         routing_specs: false,
         controller_specs: true,
         request_specs: true
-          
       # fixtureの代わりにfactory_girlを使うよう設定
       g.fixture_replacement :factory_bot, dir: 'spec/factories'
     end
