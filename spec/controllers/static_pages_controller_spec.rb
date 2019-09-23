@@ -17,4 +17,9 @@ RSpec.describe StaticPagesController, type: :controller do
     expect(response).to have_http_status(:ok)
   end
 
+  before { get :contact, params: {}, session: {} }
+  it "get contact" do
+    expect(response).to have_http_status(:ok)
+  end
+
 end
